@@ -39,19 +39,9 @@ public class Details extends AppCompatActivity {
         name1.setText(username);
         email1.setText(email);
         desc1.setText(description);
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.back,menu);
-       return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-        return true;
-
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 }
